@@ -3931,6 +3931,40 @@
                     }
                 }
             });
+
+            document.querySelectorAll("#sectorPills .pill").forEach(pill => {
+                const val = pill.getAttribute("data-val");
+                const countSpan = pill.querySelector(".pill-count");
+                if (!countSpan) return;
+                if (val === "all") {
+                    countSpan.textContent = total;
+                } else {
+                    const count = jobsData.filter(j => j.sector === val).length;
+                    countSpan.textContent = count;
+                    if (count === 0 && val !== "all") {
+                        pill.style.display = "none";
+                    } else {
+                        pill.style.display = "inline-flex";
+                    }
+                }
+            });
+
+            document.querySelectorAll("#sourcePills .pill").forEach(pill => {
+                const val = pill.getAttribute("data-val");
+                const countSpan = pill.querySelector(".pill-count");
+                if (!countSpan) return;
+                if (val === "all") {
+                    countSpan.textContent = total;
+                } else {
+                    const count = jobsData.filter(j => j.source === val).length;
+                    countSpan.textContent = count;
+                    if (count === 0 && val !== "all") {
+                        pill.style.display = "none";
+                    } else {
+                        pill.style.display = "inline-flex";
+                    }
+                }
+            });
         }
 
         // Initial Render
