@@ -1028,7 +1028,7 @@
             <div class="nav-actions">
                 <div class="nav-status">
                     <span class="pulse-dot"></span>
-                    <span>247 شاغر محقق وموثق</span>
+                    <span id="navStatusCount">94 شاغر محقق وموثق</span>
                 </div>
                 
                 <button class="nav-btn" id="favFilterBtn" onclick="toggleFavoritesFilter()">
@@ -1063,14 +1063,14 @@
             <div class="kpi-card">
                 <div class="kpi-icon-wrap" style="background: rgba(14, 165, 233, 0.12); color: #38bdf8;">🏛️</div>
                 <div>
-                    <div class="kpi-num" id="govJobsKpi">8</div>
+                    <div class="kpi-num" id="govJobsKpi">11</div>
                     <div class="kpi-label">جهات سيادية وحكومية</div>
                 </div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #fbbf24;">🏦</div>
                 <div>
-                    <div class="kpi-num" id="bankJobsKpi">15</div>
+                    <div class="kpi-num" id="bankJobsKpi">18</div>
                     <div class="kpi-label">بنوك وفنتك ومصارف</div>
                 </div>
             </div>
@@ -1107,10 +1107,10 @@
                 <div class="filter-line">
                     <span class="filter-tag-title">الدولة المستهدفة:</span>
                                                             <div class="pill-group" id="countryPills">
-                        <span class="pill active" data-filter="country" data-val="all">الكل <span class="pill-count">75</span></span>
-                        <span class="pill" data-filter="country" data-val="uae">🇦🇪 الإمارات <span class="pill-count">46</span></span>
-                        <span class="pill" data-filter="country" data-val="ksa">🇸🇦 السعودية <span class="pill-count">23</span></span>
-                        <span class="pill" data-filter="country" data-val="qatar">🇶🇦 قطر <span class="pill-count">4</span></span>
+                        <span class="pill active" data-filter="country" data-val="all">الكل <span class="pill-count">94</span></span>
+                        <span class="pill" data-filter="country" data-val="uae">🇦🇪 الإمارات <span class="pill-count">51</span></span>
+                        <span class="pill" data-filter="country" data-val="ksa">🇸🇦 السعودية <span class="pill-count">36</span></span>
+                        <span class="pill" data-filter="country" data-val="qatar">🇶🇦 قطر <span class="pill-count">5</span></span>
                         <span class="pill" data-filter="country" data-val="kuwait">🇰🇼 الكويت <span class="pill-count">2</span></span>
                     </div>
                 </div>
@@ -1119,14 +1119,14 @@
                 <div class="filter-line" id="cityFilterLine">
                     <span class="filter-tag-title">المدينة المستهدفة:</span>
                                                             <div class="pill-group" id="cityPills">
-                        <span class="pill active" data-filter="city" data-val="all">كافة المدن <span class="pill-count">75</span></span>
-                        <span class="pill" data-filter="city" data-val="دبي">🇦🇪 دبي <span class="pill-count">27</span></span>
-                        <span class="pill" data-filter="city" data-val="أبوظبي">🇦🇪 أبوظبي <span class="pill-count">19</span></span>
-                        <span class="pill" data-filter="city" data-val="الرياض">🇸🇦 الرياض <span class="pill-count">15</span></span>
-                        <span class="pill" data-filter="city" data-val="جدة">🇸🇦 جدة <span class="pill-count">5</span></span>
-                        <span class="pill" data-filter="city" data-val="الدوحة">🇶🇦 الدوحة <span class="pill-count">4</span></span>
+                        <span class="pill active" data-filter="city" data-val="all">كافة المدن <span class="pill-count">94</span></span>
+                        <span class="pill" data-filter="city" data-val="دبي">🇦🇪 دبي <span class="pill-count">30</span></span>
+                        <span class="pill" data-filter="city" data-val="الرياض">🇸🇦 الرياض <span class="pill-count">26</span></span>
+                        <span class="pill" data-filter="city" data-val="أبوظبي">🇦🇪 أبوظبي <span class="pill-count">21</span></span>
+                        <span class="pill" data-filter="city" data-val="جدة">🇸🇦 جدة <span class="pill-count">6</span></span>
+                        <span class="pill" data-filter="city" data-val="الدوحة">🇶🇦 الدوحة <span class="pill-count">5</span></span>
+                        <span class="pill" data-filter="city" data-val="الخبر">🇸🇦 الخبر <span class="pill-count">2</span></span>
                         <span class="pill" data-filter="city" data-val="مدينة الكويت">🇰🇼 الكويت <span class="pill-count">2</span></span>
-                        <span class="pill" data-filter="city" data-val="الخبر">🇸🇦 الخبر <span class="pill-count">1</span></span>
                         <span class="pill" data-filter="city" data-val="الدمام">🇸🇦 الدمام <span class="pill-count">1</span></span>
                         <span class="pill" data-filter="city" data-val="مكة المكرمة">🇸🇦 مكة المكرمة <span class="pill-count">1</span></span>
                     </div>
@@ -1136,10 +1136,10 @@
                 <div class="filter-line">
                     <span class="filter-tag-title">نوع القطاع:</span>
                     <div class="pill-group" id="sectorPills">
-                        <span class="pill active" data-filter="sector" data-val="all">كافة القطاعات <span class="pill-count">75</span></span>
-                        <span class="pill" data-filter="sector" data-val="gov">🏛️ حكومي وسيادي <span class="pill-count">8</span></span>
-                        <span class="pill" data-filter="sector" data-val="bank">🏦 بنوك ومالية <span class="pill-count">15</span></span>
-                        <span class="pill" data-filter="sector" data-val="tech">💼 كبرى وتقنية <span class="pill-count">52</span></span>
+                        <span class="pill active" data-filter="sector" data-val="all">كافة القطاعات <span class="pill-count">94</span></span>
+                        <span class="pill" data-filter="sector" data-val="gov">🏛️ حكومي وسيادي <span class="pill-count">11</span></span>
+                        <span class="pill" data-filter="sector" data-val="bank">🏦 بنوك ومالية <span class="pill-count">18</span></span>
+                        <span class="pill" data-filter="sector" data-val="tech">💼 كبرى وتقنية <span class="pill-count">65</span></span>
                     </div>
                 </div>
 
@@ -1170,7 +1170,7 @@
 
         <!-- Summary & Sort Bar -->
         <div class="results-summary-bar">
-            <div class="results-count" id="resultsCount">عرض <b>12</b> من <b>75</b> شاغر وظيفي معتمد</div>
+            <div class="results-count" id="resultsCount">عرض <b>12</b> من <b>94</b> شاغر وظيفي معتمد</div>
             
             <div class="sort-select-wrap">
                 <span>الترتيب:</span>
@@ -1199,7 +1199,7 @@
                 <span>↓</span>
             </button>
             <div class="pagination-info" id="paginationInfo">
-                يتم عرض 12 من 75 شاغر
+                يتم عرض 12 من 94 شاغر
             </div>
         </div>
 
@@ -4884,6 +4884,8 @@
         function updateDynamicStats() {
             const total = jobsData.length;
             const elTotal = document.getElementById("totalJobsKpi");
+            const elNavStatus = document.getElementById("navStatusCount");
+            if (elNavStatus) elNavStatus.textContent = `${total} شاغر محقق وموثق`;
             if (elTotal) elTotal.textContent = total;
             const elGov = document.getElementById("govJobsKpi");
             if (elGov) elGov.textContent = jobsData.filter(j => j.sector === "gov").length;
